@@ -5,14 +5,14 @@
             <div class="flex items-center gap-2 p-4">
                 <circle-profile-component />
                 <div>
-                    <h4 class="font-bold">zgenius coders</h4>
-                    <p class="text-gray">@zgeniuscoders</p>
+                    <h4 class="font-bold text-md md:text-lg">zgenius coders</h4>
+                    <p class="text-gray text-sm">@zgeniuscoders</p>
                 </div>
             </div>
 
             <!-- post body -->
             <div>
-                <p class="px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam deserunt ullam ipsum.</p>
+                <p class="px-4 text-sm md:text-md">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam deserunt ullam ipsum.</p>
                 <div class="w-full h-60 mt-2">
                     <img :src="`${photoUrl}bg.jpg`" alt="" class="h-full w-full object-cover">
                 </div>

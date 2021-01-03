@@ -1,5 +1,5 @@
 <template>
-    <div class="relative">
+    <div class="relative hidden md:block">
         <section class="bg-white shadow-sm rounded-md p-4 absolute w-full">
             <h3 class="text-indigo text-xl">Peoples suggest</h3>
 

@@ -1,5 +1,5 @@
 <template>
-    <aside class="relative">
+    <aside class="relative hidden md:block">
         <div class="bg-white rounded-md p-4 shadow-sm absolute w-full">
             <!-- Channels -->
             <div>
