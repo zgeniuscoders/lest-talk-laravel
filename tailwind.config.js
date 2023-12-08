@@ -12,7 +12,8 @@ module.exports = {
         "indigo": "#6C30F2"
       },
       textColor: {
-        "indigo": "#6C30F2"
+        "indigo": "#6C30F2",
+        "gray": "#707070"
       },
       borderColor: {
         "indigo": "#6C30F2"
@@ -20,7 +21,8 @@ module.exports = {
         "indigo": "#6C30F2"
       }
       , gridTemplateColumns: {
-        "page": "350px auto 350px"
+        "page": "350px auto 350px",
+        "postBox": "80px auto 80px"
       }
     },
   },
