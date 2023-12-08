@@ -1,5 +1,5 @@
 <template>
-    <header class="w-full bg-white">
+    <header class="w-full bg-white fixed top-0 z-10 shadow-sm">
         <div class="container mx-auto grid grid-cols-page items-center gap-4">
             <img :src="logo" alt="let's talk logo" class="w-36" />
             <nav class="">

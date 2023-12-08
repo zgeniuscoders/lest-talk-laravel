@@ -3,7 +3,7 @@
         <div>
             <!-- post head  -->
             <div class="flex items-center gap-2 p-4">
-                <div class="h-16 w-16 bg-indigo rounded-full"></div>
+                <circle-profile-component />
                 <div>
                     <h4 class="font-bold">zgenius coders</h4>
                     <p class="text-gray">@zgeniuscoders</p>
@@ -13,8 +13,8 @@
             <!-- post body -->
             <div>
                 <p class="px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam deserunt ullam ipsum.</p>
-                <div class="bg-indigo w-full h-60 mt-2">
-
+                <div class="w-full h-60 mt-2">
+                    <img :src="`${photoUrl}bg.jpg`" alt="" class="h-full w-full object-cover">
                 </div>
             </div>
 
@@ -34,4 +34,9 @@
 import buttonPostLikeComponent from './buttonPostLikeComponent.vue';
 import buttonPostCommentComponent from "./buttonPostCommentComponent.vue"
 import buttonPostSaveComponent from "./buttonPostSaveComponent.vue"
+import circleProfileComponent from '../circleProfileComponent.vue';
+import { ref } from 'vue';
+
+
+const photoUrl = ref('/')
 </script>

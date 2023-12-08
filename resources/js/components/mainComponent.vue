@@ -10,12 +10,7 @@
         </div>
 
         <div>
-            <post-card-component />
-            <post-card-component />
-            <post-card-component />
-            <post-card-component />
-            <post-card-component />
-            <post-card-component />
+            <post-card-component v-for="i in 6" :key="i" />
         </div>
     </div>
 </template>
