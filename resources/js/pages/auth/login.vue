@@ -1,52 +1,37 @@
 <template>
-   <main class="bg-gray flex items-center justify-center h-screen w-full">
-      <section class="bg-white shadow-md rounded-md w-[450px] h-[500px] px-6 flex flex-col justify-between">
+   <form-component>
+      <!-- form  -->
+      <div>
+         <form action="">
+            <input-component placeholder="Your email addresse" id="email" v-model="data.email" type="text" />
 
-         <!-- logo  -->
-         <div class="flex items-center flex-col mt-12">
-            <img :src="publicPath" alt="" class="w-[240px]">
-            <p class="text-center text-xl">Diversify and meet new people to live
-               unforgettable <span class="text-indigo">moments!!</span></p>
-         </div>
+            <input-component placeholder="Your password" id="password" v-model="data.password" type="password" />
 
-         <!-- form  -->
-         <div>
-            <form action="">
-               <input-component placeholder="Your email addresse" id="email" v-model="data.email" type="text" />
+            <button-component buttonLabel="login" />
 
-               <input-component placeholder="Your password" id="password" v-model="data.password" type="password" />
+         </form>
 
-               <button-component buttonLabel="login" />
+         <p class="text-black text-center mt-6 hover:text-indigo transition">
+            <router-link to="">Forgot password ?</router-link>
+         </p>
+      </div>
 
-            </form>
+      <!-- bottom -->
 
-            <p class="text-black text-center mt-6 hover:text-indigo transition">
-               <router-link to="">Forgot password ?</router-link>
-            </p>
-         </div>
+      <p class="text-center">
+         Don’t have an account?
+         <router-link :to="{ name: 'register' }" class="text-indigo">
+            Sign up here.
+         </router-link>
+      </p>
 
-         <!-- bottom -->
-         <div class="mb-6">
-
-
-
-            <p class="text-center">
-               Don’t have an account?
-               <router-link to="" class="text-indigo">
-                  Sign up here.
-               </router-link>
-            </p>
-         </div>
-      </section>
-   </main>
+   </form-component>
 </template>
 <script setup lang="ts">
 import { ref } from "vue"
 import inputComponent from "@/components/inputComponent.vue";
 import buttonComponent from "@/components/buttonComponent.vue";
-
-const publicPath = ref('/logo.svg')
-
+import formComponent from "@/components/formComponent.vue";
 
 const data = ref({
    email: String,

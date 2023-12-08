@@ -19,6 +19,9 @@ module.exports = {
       }, ringColor: {
         "indigo": "#6C30F2"
       }
+      , gridTemplateColumns: {
+        "page": "350px auto 350px"
+      }
     },
   },
   plugins: [],
